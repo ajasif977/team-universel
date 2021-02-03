@@ -1,0 +1,125 @@
+.body{
+    background: url(2200.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    align-items: center;
+}
+.table{
+    height: 60px;
+    width: 100%;
+    top: 15px;
+    background-color:rgb(117, 229, 248);
+}
+a
+{
+    position: relative;
+    display:inline-block ;
+    padding: 15px 30px ;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 18px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+a:nth-child(1){
+    filter: hue-rotate(290deg);
+}
+a:nth-child(3){
+    filter: hue-rotate(110deg);
+}
+a:nth-child(2){
+    filter: hue-rotate(360deg);
+}
+a:nth-child(4){
+    filter: hue-rotate(220deg);
+}
+a:nth-child(5){
+    filter: hue-rotate(400deg);
+}
+a:nth-child(6){
+    filter: hue-rotate(900deg);
+}
+a:hover
+{
+    color: #255782;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+ a span
+ {
+     position: absolute;
+     display: block;
+ }
+ a span:nth-child(1)
+ {
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 2px;
+     background: linear-gradient(90deg,transparent,#2196f3);
+ }
+ a:hover span:nth-child(1)
+ {
+     left: 100%;
+     transition: 1s;
+ } 
+ a span:nth-child(3)
+ {
+     bottom: 0;
+     right: -100%;
+     width: 100%;
+     height: 2px;
+     background: linear-gradient(270deg,transparent,#2196f3);
+ }
+ a:hover span:nth-child(3)
+ {
+     right: 100%;
+     transition: 1s;
+     transition-delay: 0.5s;
+ } 
+ a span:nth-child(2)
+ {
+     top:  -100%;
+     right: 0%;
+     width: 2px;
+     height: 100%;
+     background: linear-gradient(180deg,transparent,#2196f3);
+ }
+
+ a:hover span:nth-child(2)
+ {
+     top: 100%;
+     transition: 1s;
+     transition-delay: 0.25s;
+ } 
+ a span:nth-child(4)
+ {
+     bottom: -100%;
+     left: 0;
+     width: 2px;
+     height: 100%;
+     background: linear-gradient(360deg,transparent,#2196f3);
+ }
+ a:hover span:nth-child(4)
+ {
+     bottom: 100%;
+     transition: 1s;
+     transition-delay: 0.75s;
+ } 
+ .heading{
+     color: chartreuse;
+     font-size: 50px;
+ }
+.text{
+    color: rgb(98, 173, 24);
+    font-size: 20px;
+    background-color:  rgb(236, 238, 235);
+    width: 30%;   
+    text-align: center;
+    box-sizing: border-box;
+    border: 0;
+}
+ 

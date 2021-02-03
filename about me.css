@@ -1,0 +1,267 @@
+section{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  
+}
+.set{
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+}
+.set div{
+position: absolute;
+display: block;
+}
+.set div:nth-child(1){
+left: 20%;
+animation: animate 15s linear infinite;
+animation-delay: -7s;
+}
+.set div:nth-child(2){
+left: 50%;
+animation: animate 20s linear infinite;
+animation-delay: -5s;
+}
+.set div:nth-child(3){
+left: 70%;
+animation: animate 25s linear infinite;
+
+}
+.set div:nth-child(4){
+left: 0%;
+animation: animate 15s linear infinite;
+animation-delay: -5s;
+}
+.set div:nth-child(5){
+left: 85%;
+animation: animate 18s linear infinite;
+animation-delay: -10s;
+}
+.set div:nth-child(6){
+left: 0%;
+animation: animate 12s linear infinite;
+animation-delay: -2s;
+}
+.set div:nth-child(7){
+left: 15%;
+animation: animate 14s linear infinite;
+
+}
+.set div:nth-child(8){
+left: 60%;
+animation: animate 15s linear infinite;
+animation-delay: -4s;
+}
+@keyframes animate
+{
+0%{
+    opacity: 0;
+    top: -10%;
+    transform: translateX(-20px) rotate(45deg);
+}
+10%{
+    opacity: 1;
+}
+20%{
+    transform: translateX(-20px) rotate(45deg);
+}
+40%{
+    transform: translateX(-20px) rotate(90eg);
+}
+60%{
+    transform: translateX(-20px) rotate(135deg);
+}
+80%{
+    transform: translateX(-20px) rotate(180deg);
+}
+100%{
+   top: 110%;
+   transform: translateX(-20px) rotate(225 deg);
+}   
+}
+.set2
+{
+transform: scale(2) rotateY(180deg);
+filter: blur(2px);
+}
+.set3
+{
+transform: scale(0.8) rotateX(180deg);
+filter: blur(4px);
+}
+.body{
+    background-color: rgb(58, 53, 53);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    align-items: center;
+}
+.table{
+    height: 60px;
+    width: 100%;
+    top: 15px;
+    background-color:rgb(117, 229, 248);
+}
+a
+{
+    position: relative;
+    display:inline-block ;
+    padding: 15px 30px ;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 18px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+a:nth-child(1){
+    filter: hue-rotate(290deg);
+}
+a:nth-child(3){
+    filter: hue-rotate(110deg);
+}
+a:nth-child(2){
+    filter: hue-rotate(360deg);
+}
+a:nth-child(4){
+    filter: hue-rotate(220deg);
+}
+a:nth-child(5){
+    filter: hue-rotate(400deg);
+}
+a:nth-child(6){
+    filter: hue-rotate(900deg);
+}
+a:hover
+{
+    color: #255782;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+ a span
+ {
+     position: absolute;
+     display: block;
+ }
+ a span:nth-child(1)
+ {
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 2px;
+     background: linear-gradient(90deg,transparent,#2196f3);
+ }
+ a:hover span:nth-child(1)
+ {
+     left: 100%;
+     transition: 1s;
+ } 
+ a span:nth-child(3)
+ {
+     bottom: 0;
+     right: -100%;
+     width: 100%;
+     height: 2px;
+     background: linear-gradient(270deg,transparent,#2196f3);
+ }
+ a:hover span:nth-child(3)
+ {
+     right: 100%;
+     transition: 1s;
+     transition-delay: 0.5s;
+ } 
+ a span:nth-child(2)
+ {
+     top:  -100%;
+     right: 0%;
+     width: 2px;
+     height: 100%;
+     background: linear-gradient(180deg,transparent,#2196f3);
+ }
+
+ a:hover span:nth-child(2)
+ {
+     top: 100%;
+     transition: 1s;
+     transition-delay: 0.25s;
+ } 
+ a span:nth-child(4)
+ {
+     bottom: -100%;
+     left: 0;
+     width: 2px;
+     height: 100%;
+     background: linear-gradient(360deg,transparent,#2196f3);
+ }
+ a:hover span:nth-child(4)
+ {
+     bottom: 100%;
+     transition: 1s;
+     transition-delay: 0.75s;
+ } 
+ .heading{
+     color: chartreuse;
+     font-size: 50px;
+ } 
+.card{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 400px;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 0.5s;
+}
+.card .front{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.5s;
+}
+.card:hover .front{
+    transform: rotateX(-180deg);
+}
+.card .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(57, 20, 78);
+    backface-visibility: hidden;
+    transform: rotateX(-180deg);
+    transition: 0.5s;
+}
+.card:hover .back{
+    transform: rotateX(0deg);
+}
+.card .back .details{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.card .back .details h2{
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: cornsilk;
+}
+.card .back .details h2 span{
+    color: #a7a7a7;
+    font-size: 16px;
+}
